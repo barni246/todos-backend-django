@@ -32,6 +32,7 @@ class TodoItemView(APIView):
         serializer = TodoItemSerializer(todos, many=True)
         return Response(serializer.data)
     
+    
     def post(self, request, format=None):
         title = request.data.get('title')
         checked = request.data.get('checked',False)

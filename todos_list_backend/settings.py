@@ -135,3 +135,5 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     ]
 }
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
